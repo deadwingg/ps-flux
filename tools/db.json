@@ -11,7 +11,7 @@
       "id": 2,
       "title": "React: The Big Picture",
       "slug": "react-big-picture",
-      "authorId": 1,
+      "authorId": 2,
       "category": "JavaScript"
     },
     {
@@ -39,7 +39,7 @@
       "id": 6,
       "title": "Building Applications in React and Flux",
       "slug": "react-flux-building-applications",
-      "authorId": 1,
+      "authorId": 2,
       "category": "JavaScript"
     },
     {
@@ -72,11 +72,11 @@
     },
     {
       "id": 11,
-      "slug": "acariciamiento-de-cuises",
-      "title": "Acariciamiento de cuises",
+      "slug": "fdsafdsafds",
+      "title": "fdsafdsafds",
       "authorId": 2,
-      "category": "Cuisaceos",
-      "createdAt": 1589000297967
+      "category": "fdsafds",
+      "createdAt": 1589002257547
     }
   ],
   "authors": [
