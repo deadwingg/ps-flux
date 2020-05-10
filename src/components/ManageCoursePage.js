@@ -3,6 +3,7 @@ import CourseForm from "./CourseForm";
 import courseStore from "../stores/courseStore";
 import { toast } from "react-toastify";
 import * as courseActions from "../actions/courseActions";
+import {Redirect} from "react-router-dom";
 
 const ManageCoursePage = props => {
   const [errors, setErrors] = useState({});
@@ -21,7 +22,11 @@ const ManageCoursePage = props => {
     if (courses.length === 0) {
       courseActions.loadCourses();
     } else if (slug) {
-      setCourse(courseStore.getCourseBySlug(slug));
+      let foundCourse = courseStore.getCourseBySlug(slug);
+      if (foundCourse)
+        setCourse(foundCourse);
+      else
+        props.history.push("/404");
     }
     return () => courseStore.removeChangeListener(onChange);
   }, [courses.length, props.match.params.slug]);
