@@ -19,7 +19,7 @@ function SelectInput(props) {
                 >
                     {props.options.map( option => {
                         return (
-                            <option value={option.value}>{option.label}</option>
+                            <option key={option.id} value={option.id}>{option.name}</option>
                         )
                     })}
                 </select>
@@ -37,8 +37,8 @@ SelectInput.propTypes = {
     value: PropTypes.string,
     error: PropTypes.string,
     options: PropTypes.arrayOf(PropTypes.shape({
-        value: PropTypes.string.isRequired,
-        label: PropTypes.string.isRequired
+        id: PropTypes.number.isRequired,
+        name: PropTypes.string.isRequired
     }))
 };
 

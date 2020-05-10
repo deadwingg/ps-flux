@@ -47,7 +47,7 @@ Dispatcher.register(action => {
             );
             store.emitChange();
             break;*/
-        case actionTypes.LOAD_COURSES:
+        case actionTypes.LOAD_AUTHORS:
             _authors = action.authors;
             store.emitChange();
             break;
